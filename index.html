@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ThreadCraft Studio | Bespoke Custom Embroidery & Apparel Stitching</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Thread Pattern Canvas Simulation -->
+  <div class="bg-pattern" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="brand-logo">
+  <img src="p9.jpeg" alt="Zeylo Logo" class="logo-img">
+</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#portfolio" class="nav-link">Showcase</a></li>
+        <li><a href="#process" class="nav-link">Craft Process</a></li>
+        <li><a href="#estimator" class="nav-link">Cost Estimator</a></li>
+        <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+        <li><a href="#contact" class="nav-link nav-btn">Request Quote</a></li>
+      </ul>
+
+      <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Navigation">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span> Premier Custom Digitizing & Stitching
+      </div>
+      <h1 class="hero-title">
+        Zeylo Embroidery <br>
+        <span class="text-gradient">Woven to Perfection.</span>
+      </h1>
+      <p class="hero-description">
+        Transforming luxury garments, corporate apparel, and custom patches with ultra-high stitch densities and metallic metallic thread craft. Precision engineering meets master artisanry.
+      </p>
+      <div class="hero-actions">
+        <a href="#estimator" class="btn btn-primary btn-glow">
+          <i class="fa-solid fa-calculator"></i> Get Instant Estimate
+        </a>
+        <a href="#portfolio" class="btn btn-outline">
+          <i class="fa-solid fa-eye"></i> View Portfolio
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-number" data-target="2500000">0</span>+
+          <span class="stat-label">Stitches Executed Daily</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="99.8">0</span>%
+          <span class="stat-label">Precision Quality Score</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-number" data-target="12">0</span>K+
+          <span class="stat-label">Custom Garments Delivered</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Video Showcase Section -->
+<section class="section video-section" id="video-showcase">
+  <div class="container">
+    <div class="section-header">
+      <span class="section-subtitle">Craftsmanship In Motion</span>
+      <h2 class="section-title">See Precision Stitching Live</h2>
+      <div class="header-line"></div>
+    </div>
+
+    <div class="video-wrapper">
+      <video 
+        class="feature-video" 
+        autoplay 
+        muted 
+        loop 
+        playsinline 
+        poster="https://images.unsplash.com/photo-1618005182384-a83a8bd57fbe?auto=format&fit=crop&q=80&w=1200"
+      >
+        <source src="v1.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <!-- Optional Subtle Dark Overlay for Text / Contrast -->
+      <div class="video-overlay">
+        <button class="video-play-btn" id="videoToggleBtn" aria-label="Pause or Play Video">
+          <i class="fa-solid fa-pause"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  
+  <!-- Showcase Gallery Section -->
+  <section class="section portfolio-section" id="portfolio">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Tactile Precision</span>
+        <h2 class="section-title">Thread & Texture Showcase</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="portfolio-filters">
+        <button class="filter-btn active" data-filter="all">All Works</button>
+        <button class="filter-btn" data-filter="patches">Custom Patches</button>
+        <button class="filter-btn" data-filter="corporate">Corporate Apparel</button>
+      
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+        
+        <!-- Card 1 -->
+        <div class="portfolio-card" data-category="patches" data-id="1">
+          <div class="card-image-wrap">
+            <img src="p1.jpeg" alt="Embroidered Patch">
+            <div class="card-badge">Patches</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Apex Crest Tactical Patch</h3>
+            <p class="card-meta">28,400 Stitches | Metallic Gold & Matte Poly</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="portfolio-card" data-category="outerwear" data-id="2">
+          <div class="card-image-wrap">
+            <img src="p2.jpeg" alt="Jacket Back Embroidery">
+            <div class="card-badge">Outerwear</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Ronin Spirit Leather Backpiece</h3>
+            <p class="card-meta">112,000 Stitches | Rayon Silk Thread</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="portfolio-card" data-category="corporate" data-id="3">
+          <div class="card-image-wrap">
+            <img src="p3.jpeg" alt="Corporate Polo Embroidery">
+            <div class="card-badge">Corporate</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Vanguard Executive Polo</h3>
+            <p class="card-meta">8,200 Stitches | Ultra-Dense Micro-Satin</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="portfolio-card" data-category="monograms" data-id="4">
+          <div class="card-image-wrap">
+            <img src="p4.jpeg" alt="Monogrammed Cuff">
+            <div class="card-badge">Monograms</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Royal Heritage Monogram Cuff</h3>
+            <p class="card-meta">4,500 Stitches | Pearl White Silk Thread</p>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="portfolio-card" data-category="patches" data-id="5">
+          <div class="card-image-wrap">
+            <img src="p5.jpeg" alt="3D Puff Embroidery Patch">
+            <div class="card-badge">Patches</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Cybernetic 3D Puff Badge</h3>
+            <p class="card-meta">35,000 Stitches | 3mm EVA Foam Underlay</p>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="portfolio-card" data-category="patches" data-id="5">
+          <div class="card-image-wrap">
+            <img src="p6.jpeg" alt="3D Puff Embroidery Patch">
+            <div class="card-badge">Patches</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Cybernetic 3D Puff Badge</h3>
+            <p class="card-meta">35,000 Stitches | 3mm EVA Foam Underlay</p>
+          </div>
+        </div>
+
+          <div class="portfolio-card" data-category="patches" data-id="5">
+          <div class="card-image-wrap">
+            <img src="p7.jpeg" alt="3D Puff Embroidery Patch">
+            <div class="card-badge">Patches</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Cybernetic 3D Puff Badge</h3>
+            <p class="card-meta">35,000 Stitches | 3mm EVA Foam Underlay</p>
+          </div>
+        </div>
+
+       <div class="portfolio-card" data-category="patches" data-id="5">
+          <div class="card-image-wrap">
+            <img src="p8.jpeg" alt="3D Puff Embroidery Patch">
+            <div class="card-badge">Patches</div>
+            <div class="card-overlay">
+              <button class="btn-icon"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+            </div>
+          </div>
+          <div class="card-info">
+            <h3 class="card-title">Cybernetic 3D Puff Badge</h3>
+            <p class="card-meta">35,000 Stitches | 3mm EVA Foam Underlay</p>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      
+      </div>
+    </div>
+  </section>
+
+  <!-- Process Section -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Execution Pipeline</span>
+        <h2 class="section-title">The Masterwork Process</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="process-grid">
+        
+        <div class="process-card">
+          <div class="step-number">01</div>
+          <div class="process-icon"><i class="fa-solid fa-vector-square"></i></div>
+          <h3 class="process-title">Artwork & Digitizing</h3>
+          <p class="process-desc">
+            We manually translate your vector designs into precise stitch paths (DST/EMB formats), adjusting pull compensation, densities, and stitch direction angles.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">02</div>
+          <div class="process-icon"><i class="fa-solid fa-palette"></i></div>
+          <h3 class="process-title">Thread & Garment Matching</h3>
+          <p class="process-desc">
+            Pantone shade matching using high-tensile Madeira & Isacord threads across rayon silk, high-luster metallic, and fire-retardant poly variants.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">03</div>
+          <div class="process-icon"><i class="fa-solid fa-compact-disc"></i></div>
+          <h3 class="process-title">Precision Stitching</h3>
+          <p class="process-desc">
+            Executed on multi-head Tajima embroidery machinery calibrated at up to 1,100 SPM with micro-tension monitoring to ensure zero puckering.
+          </p>
+        </div>
+
+        <div class="process-card">
+          <div class="step-number">04</div>
+          <div class="process-icon"><i class="fa-solid fa-award"></i></div>
+          <h3 class="process-title">Quality Control & Delivery</h3>
+          <p class="process-desc">
+            Manual trimming of jump stitches, backing removal, steam pressing, and rigorous optical inspection before vacuum sealing and dispatch.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cost Estimator Section -->
+  <section class="section estimator-section" id="estimator">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Transparent Pricing</span>
+        <h2 class="section-title">Interactive Cost Estimator</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="estimator-wrapper">
+        <div class="estimator-controls">
+          
+          <!-- Garment Type -->
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-shirt"></i> 1. Select Garment Base</label>
+            <div class="grid-options">
+              <button class="option-card active" data-type="garment" data-value="tshirt" data-base="6.50">
+                <span class="opt-title">T-Shirts</span>
+                <span class="opt-sub">Premium Cotton</span>
+              </button>
+              <button class="option-card" data-type="garment" data-value="hoodie" data-base="18.00">
+                <span class="opt-title">Hoodies</span>
+                <span class="opt-sub">Heavyweight Fleece</span>
+              </button>
+              <button class="option-card" data-type="garment" data-value="cap" data-base="8.00">
+                <span class="opt-title">Caps / Beanies</span>
+                <span class="opt-sub">Structured 6-Panel</span>
+              </button>
+              <button class="option-card" data-type="garment" data-value="jacket" data-base="35.00">
+                <span class="opt-title">Jackets</span>
+                <span class="opt-sub">Outerwear / Leather</span>
+              </button>
+              <button class="option-card" data-type="garment" data-value="patch" data-base="3.50">
+                <span class="opt-title">Custom Patch</span>
+                <span class="opt-sub">Merrowed Border</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Quantity Slider -->
+          <div class="form-group">
+            <div class="label-row">
+              <label class="form-label" for="quantitySlider"><i class="fa-solid fa-layer-group"></i> 2. Order Quantity</label>
+              <span class="qty-display" id="qtyDisplay">25 Units</span>
+            </div>
+            <input type="range" id="quantitySlider" min="1" max="500" value="25" step="1" class="custom-slider">
+            <div class="slider-ticks">
+              <span>1</span>
+              <span>50</span>
+              <span>100</span>
+              <span>250</span>
+              <span>500+</span>
+            </div>
+          </div>
+
+          <!-- Embroidery Locations -->
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-location-crosshairs"></i> 3. Embroidery Placements</label>
+            <div class="checkbox-group">
+              <label class="checkbox-card">
+                <input type="checkbox" class="loc-check" value="left_chest" checked data-cost="2.50">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">Left Chest (Standard)</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" class="loc-check" value="right_sleeve" data-cost="2.00">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">Right Sleeve</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" class="loc-check" value="full_back" data-cost="8.00">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">Full Back</span>
+              </label>
+              <label class="checkbox-card">
+                <input type="checkbox" class="loc-check" value="cap_front" data-cost="3.00">
+                <span class="checkbox-custom"></span>
+                <span class="checkbox-label">Cap Front / Side</span>
+              </label>
+            </div>
+          </div>
+
+          <!-- Complexity / Stitch Count -->
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-microchip"></i> 4. Design Complexity</label>
+            <select id="complexitySelect" class="form-select">
+              <option value="simple" data-factor="1.0">Simple Logo (&lt; 7,000 Stitches)</option>
+              <option value="medium" data-factor="1.4" selected>Detailed Emblem (7,000 - 18,000 Stitches)</option>
+              <option value="complex" data-factor="2.2">Intricate / Full Back (&gt; 18,000 Stitches)</option>
+              <option value="puff" data-factor="2.8">3D High-Puff Metallic Stitching</option>
+            </select>
+          </div>
+
+        </div>
+
+        <!-- Realtime Summary Box -->
+        <div class="estimator-summary">
+          <div class="summary-card">
+            <h3 class="summary-title">Estimate Summary</h3>
+            <div class="summary-line"></div>
+
+            <div class="summary-details">
+              <div class="summary-row">
+                <span>Selected Base</span>
+                <span id="summaryGarment" class="val">T-Shirts</span>
+              </div>
+              <div class="summary-row">
+                <span>Total Items</span>
+                <span id="summaryQty" class="val">25 Units</span>
+              </div>
+              <div class="summary-row">
+                <span>Est. Per Unit Price</span>
+                <span id="summaryUnitPrice" class="val">RS:9.00</span>
+              </div>
+              <div class="summary-row">
+                <span>Est. Production Turnaround</span>
+                <span id="summaryTurnaround" class="val">5 - 7 Business Days</span>
+              </div>
+            </div>
+
+            <div class="summary-total-box">
+              <span class="total-label">Estimated Total</span>
+              <span class="total-amount" id="summaryTotal">rs:225.00</span>
+              <span class="total-disclaimer">*Excludes shipping & digitized file setup fee if applicable</span>
+            </div>
+
+            <button class="btn btn-primary btn-block" id="openQuoteModalBtn">
+              <i class="fa-solid fa-paper-plane"></i> Lock In Quote & Upload Artwork
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Client Endorsements</span>
+        <h2 class="section-title">Trusted By Premium Brands</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="testimonial-carousel">
+        <div class="testimonial-track" id="testimonialTrack">
+          
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "ThreadCraft transformed our luxury streetwear jacket drop. The 3D puff stitching fidelity on heavy leather exceeded our expectations. Zero thread breaks across 500 units."
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=200" alt="Client Avatar">
+              </div>
+              <div>
+                <h4 class="client-name">Elena Rostova</h4>
+                <p class="client-role">Creative Director, KRONOS Apparel</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "The digitizing precision for our corporate emblems was spot-on. Even tiny 4pt typography was completely legible with their metallic thread technique. Flawless turnaround."
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200" alt="Client Avatar">
+              </div>
+              <div>
+                <h4 class="client-name">Marcus Vance</h4>
+                <p class="client-role">Operations VP, Apex Global Security</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card">
+            <div class="quote-icon"><i class="fa-solid fa-quote-left"></i></div>
+            <p class="testimonial-text">
+              "Their custom patch merrowing edge work is the best in North America. Highly consistent colors across large batch runs. ThreadCraft is our permanent stitching partner."
+            </p>
+            <div class="client-info">
+              <div class="client-avatar">
+                <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&q=80&w=200" alt="Client Avatar">
+              </div>
+              <div>
+                <h4 class="client-name">Sarah Lin</h4>
+                <p class="client-role">Head of Sourcing, Nomad Athletics</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="carousel-dots" id="carouselDots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Start Your Project</span>
+        <h2 class="section-title">Request Official Quote</h2>
+        <div class="header-line"></div>
+      </div>
+
+      <div class="contact-wrapper">
+        <div class="contact-info-panel">
+          <h3 class="panel-title">Studio Atelier</h3>
+          <p class="panel-desc">Ready to elevate your apparel? Send us your vector files or design concept for a comprehensive digitizing audit.</p>
+
+          <div class="contact-details">
+            <div class="c-detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <strong>Atelier Location</strong>
+                <p>742 Stitching District Way, Suite 400<br>New York, NY 10001</p>
+              </div>
+            </div>
+            <div class="c-detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              <div>
+                <strong>Direct Email</strong>
+                <p>zeyloclothing@gmail.com</p>
+              </div>
+            </div>
+            <div class="c-detail-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <strong>Direct Line</strong>
+                <p>+94 77 044 1914</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" id="mainContactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="fullName">Full Name *</label>
+              <input type="text" id="fullName" required placeholder="John Doe">
+            </div>
+            <div class="form-field">
+              <label for="emailAddr">Email Address *</label>
+              <input type="email" id="emailAddr" required placeholder="john@brand.com">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phoneNum">Phone Number</label>
+              <input type="tel" id="phoneNum" placeholder="+1 (555) 000-0000">
+            </div>
+            <div class="form-field">
+              <label for="projDeadline">Target Deadline</label>
+              <input type="date" id="projDeadline">
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label>Upload Design / Vector Artwork (AI, EPS, PNG, DST)</label>
+            <div class="file-dropzone" id="dropzone">
+              <input type="file" id="fileInput" multiple accept=".png,.jpg,.ai,.eps,.pdf,.dst" class="file-hidden">
+              <i class="fa-solid fa-cloud-arrow-up drop-icon"></i>
+              <p class="drop-text">Drag & Drop your artwork here or <span class="browse-link">Browse Files</span></p>
+              <span class="drop-subtext">Max size 25MB (.AI, .EPS, .PNG, .DST)</span>
+              <div class="file-list" id="fileList"></div>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="projectNotes">Project Specifications / Notes</label>
+            <textarea id="projectNotes" rows="4" placeholder="Detail any specific thread preferences, placement dimensions, or garment brand requirements..."></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block btn-glow">
+            <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div class="modal-overlay" id="lightboxModal" aria-hidden="true">
+    <div class="modal-container lightbox-content">
+      <button class="modal-close" id="modalCloseBtn">&times;</button>
+      <div class="lightbox-grid">
+        <div class="lightbox-img-wrap">
+          <img id="modalImg" src="" alt="Detail View">
+        </div>
+        <div class="lightbox-details">
+          <span class="badge" id="modalBadge">Category</span>
+          <h2 id="modalTitle">Project Title</h2>
+          <div class="divider"></div>
+          <p id="modalDesc" class="desc">Detailed description goes here...</p>
+          
+          <div class="specs-grid">
+            <div class="spec-box">
+              <span class="spec-label">Stitch Count</span>
+              <span class="spec-val" id="modalStitchCount">0</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Thread Type</span>
+              <span class="spec-val" id="modalThreadType">Rayon</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Machine Type</span>
+              <span class="spec-val">Tajima 15-Needle</span>
+            </div>
+            <div class="spec-box">
+              <span class="spec-label">Turnaround</span>
+              <span class="spec-val">4 Days</span>
+            </div>
+          </div>
+
+          <a href="#contact" class="btn btn-primary btn-block modal-cta">Order Similar Craft</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <a href="#hero" class="brand-logo">
+          <span class="logo-icon"><i class="fa-solid fa-needle"></i></span>
+          <span class="logo-text">Ze<span class="highlight">ylo</span></span>
+        </a>
+        <p>Master-grade custom embroidery and high-density stitching studio.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navigation</h4>
+        <ul>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#portfolio">Showcase</a></li>
+          <li><a href="#process">Craft Process</a></li>
+          <li><a href="#estimator">Cost Estimator</a></li>
+        </ul>
+      </div>
+      <div class="footer-socials">
+        <h4>Connect</h4>
+        <div class="social-icons">
+          <a href="https://www.instagram.com/zeylo.lk?igsh=eTBtdTh4bmlhdTU=" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://www.tiktok.com/@zeylo.lk?_r=1&_t=ZS-98KdH5kFlB" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Zeylo Clothing. All Rights Reserved. Built with Vanilla Craftsmanship.</p>
+    </div>
+  </footer>
+
+  <!-- Script File -->
+  <script src="script.js"></script>
+</body>
+</html>
